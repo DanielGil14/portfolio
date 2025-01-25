@@ -1,0 +1,98 @@
+[debug] [2025-01-25T18:58:05.161Z] ----------------------------------------------------------------------
+[debug] [2025-01-25T18:58:05.163Z] Command:       D:\nodeJS\node.exe C:\Users\donet\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --debug
+[debug] [2025-01-25T18:58:05.164Z] CLI Version:   13.29.2
+[debug] [2025-01-25T18:58:05.164Z] Platform:      win32
+[debug] [2025-01-25T18:58:05.164Z] Node Version:  v20.12.2
+[debug] [2025-01-25T18:58:05.164Z] Time:          Sat Jan 25 2025 19:58:05 GMT+0100 (hora estándar de Europa central)
+[debug] [2025-01-25T18:58:05.164Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-25T18:58:05.356Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-25T18:58:05.357Z] > authorizing via signed-in user (danielgilcan@gmail.com)
+[debug] [2025-01-25T18:58:05.358Z] [iam] checking project portfolio-daniel-ca268 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-25T18:58:05.359Z] Checked if tokens are valid: false, expires at: 1737831630302
+[debug] [2025-01-25T18:58:05.359Z] Checked if tokens are valid: false, expires at: 1737831630302
+[debug] [2025-01-25T18:58:05.360Z] > refreshing access token with scopes: []
+[debug] [2025-01-25T18:58:05.362Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-01-25T18:58:05.362Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-25T18:58:05.576Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-01-25T18:58:05.576Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-01-25T18:58:05.586Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-daniel-ca268:testIamPermissions [none]
+[debug] [2025-01-25T18:58:05.586Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-daniel-ca268:testIamPermissions x-goog-quota-user=projects/portfolio-daniel-ca268
+[debug] [2025-01-25T18:58:05.587Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-daniel-ca268:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-25T18:58:06.306Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-daniel-ca268:testIamPermissions 200
+[debug] [2025-01-25T18:58:06.307Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-daniel-ca268:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-25T18:58:06.308Z] Checked if tokens are valid: true, expires at: 1737835084577
+[debug] [2025-01-25T18:58:06.308Z] Checked if tokens are valid: true, expires at: 1737835084577
+[debug] [2025-01-25T18:58:06.308Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-daniel-ca268 [none]
+[debug] [2025-01-25T18:58:06.638Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-daniel-ca268 200
+[debug] [2025-01-25T18:58:06.639Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-daniel-ca268 {"projectId":"portfolio-daniel-ca268","projectNumber":"330179693381","displayName":"portfolio-daniel","name":"projects/portfolio-daniel-ca268","resources":{"hostingSite":"portfolio-daniel-ca268"},"state":"ACTIVE","etag":"1_bcccfb12-6fa6-4aee-8a6c-1f9da5d92bd2"}
+[info] 
+[info] === Deploying to 'portfolio-daniel-ca268'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-01-25T18:58:06.647Z] Checked if tokens are valid: true, expires at: 1737835084577
+[debug] [2025-01-25T18:58:06.648Z] Checked if tokens are valid: true, expires at: 1737835084577
+[debug] [2025-01-25T18:58:06.649Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/versions [none]
+[debug] [2025-01-25T18:58:06.649Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-01-25T18:58:08.146Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/versions 200
+[debug] [2025-01-25T18:58:08.147Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/versions {"name":"projects/330179693381/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[portfolio-daniel-ca268]: beginning deploy... 
+[info] i  hosting[portfolio-daniel-ca268]: found 1 files in y 
+[debug] [2025-01-25T18:58:08.158Z] [hosting] uploading with 200 concurrency
+[debug] [2025-01-25T18:58:08.160Z] Checked if tokens are valid: true, expires at: 1737835084577
+[debug] [2025-01-25T18:58:08.161Z] Checked if tokens are valid: true, expires at: 1737835084577
+[debug] [2025-01-25T18:58:08.162Z] [hosting] hash cache [eQ] stored for 1 files
+[debug] [2025-01-25T18:58:08.162Z] [hosting][hash queue][FINAL] {"max":0,"min":0,"avg":0,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2}
+[debug] [2025-01-25T18:58:08.163Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/330179693381/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637:populateFiles [none]
+[debug] [2025-01-25T18:58:08.163Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/330179693381/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637:populateFiles {"files":{"/index.html":"909aab6a317cdf05a56219993c14561d7b829e47e0b886677057ece0ec906f51"}}
+[debug] [2025-01-25T18:58:08.685Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/330179693381/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637:populateFiles 200
+[debug] [2025-01-25T18:58:08.686Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/330179693381/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637/files"}
+[debug] [2025-01-25T18:58:08.686Z] [hosting][populate queue][FINAL] {"max":526,"min":526,"avg":526,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":526}
+[debug] [2025-01-25T18:58:08.687Z] [hosting] uploads queued: 0
+[debug] [2025-01-25T18:58:08.687Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1737831488687}
+[info] i  hosting: upload complete 
+[info] +  hosting[portfolio-daniel-ca268]: file upload complete 
+[debug] [2025-01-25T18:58:08.688Z] [hosting] deploy completed after 539ms
+[debug] [2025-01-25T18:58:08.688Z] [
+  {
+    "config": {
+      "public": "y",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "portfolio-daniel-ca268"
+    },
+    "version": "projects/330179693381/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637"
+  }
+]
+[info] i  hosting[portfolio-daniel-ca268]: finalizing version... 
+[debug] [2025-01-25T18:58:08.692Z] Checked if tokens are valid: true, expires at: 1737835084577
+[debug] [2025-01-25T18:58:08.692Z] Checked if tokens are valid: true, expires at: 1737835084577
+[debug] [2025-01-25T18:58:08.693Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637 updateMask=status%2Cconfig
+[debug] [2025-01-25T18:58:08.693Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-01-25T18:58:09.273Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637 200
+[debug] [2025-01-25T18:58:09.273Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637 {"name":"projects/330179693381/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-01-25T18:58:07.448506Z","createUser":{"email":"danielgilcan@gmail.com"},"finalizeTime":"2025-01-25T18:58:09.094785Z","finalizeUser":{"email":"danielgilcan@gmail.com"}}
+[debug] [2025-01-25T18:58:09.274Z] [hosting] finalized version for portfolio-daniel-ca268:[object Object]
+[info] +  hosting[portfolio-daniel-ca268]: version finalized 
+[info] i  hosting[portfolio-daniel-ca268]: releasing new version... 
+[debug] [2025-01-25T18:58:09.275Z] Checked if tokens are valid: true, expires at: 1737835084577
+[debug] [2025-01-25T18:58:09.275Z] Checked if tokens are valid: true, expires at: 1737835084577
+[debug] [2025-01-25T18:58:09.276Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/channels/live/releases versionName=projects%2F330179693381%2Fsites%2Fportfolio-daniel-ca268%2Fversions%2Fbd8a42edbf991637
+[debug] [2025-01-25T18:58:09.276Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/channels/live/releases {}
+[debug] [2025-01-25T18:58:09.873Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/channels/live/releases 200
+[debug] [2025-01-25T18:58:09.874Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-daniel-ca268/channels/live/releases {"name":"projects/330179693381/sites/portfolio-daniel-ca268/channels/live/releases/1737831489045000","version":{"name":"projects/330179693381/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-01-25T18:58:07.448506Z","createUser":{"email":"danielgilcan@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKwgLXmTHJMEkqnNrPXb3p4iKv_FS1gnR9OTFYTY_WWduG1Fw=mo"},"finalizeTime":"2025-01-25T18:58:09.094785Z","finalizeUser":{"email":"danielgilcan@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKwgLXmTHJMEkqnNrPXb3p4iKv_FS1gnR9OTFYTY_WWduG1Fw=mo"}},"type":"DEPLOY","releaseTime":"2025-01-25T18:58:09.045Z","releaseUser":{"email":"danielgilcan@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKwgLXmTHJMEkqnNrPXb3p4iKv_FS1gnR9OTFYTY_WWduG1Fw=mo"}}
+[debug] [2025-01-25T18:58:09.875Z] [hosting] release: {"name":"projects/330179693381/sites/portfolio-daniel-ca268/channels/live/releases/1737831489045000","version":{"name":"projects/330179693381/sites/portfolio-daniel-ca268/versions/bd8a42edbf991637","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-01-25T18:58:07.448506Z","createUser":{"email":"danielgilcan@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKwgLXmTHJMEkqnNrPXb3p4iKv_FS1gnR9OTFYTY_WWduG1Fw=mo"},"finalizeTime":"2025-01-25T18:58:09.094785Z","finalizeUser":{"email":"danielgilcan@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKwgLXmTHJMEkqnNrPXb3p4iKv_FS1gnR9OTFYTY_WWduG1Fw=mo"}},"type":"DEPLOY","releaseTime":"2025-01-25T18:58:09.045Z","releaseUser":{"email":"danielgilcan@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKwgLXmTHJMEkqnNrPXb3p4iKv_FS1gnR9OTFYTY_WWduG1Fw=mo"}}
+[info] +  hosting[portfolio-daniel-ca268]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/portfolio-daniel-ca268/overview
+[info] Hosting URL: https://portfolio-daniel-ca268.web.app
