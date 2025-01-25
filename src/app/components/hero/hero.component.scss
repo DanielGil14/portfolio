@@ -1,0 +1,42 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #1c1b2d;
+    .text {
+        max-width: 50%;
+
+        p {
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #4db8ff;
+        }
+
+        button {
+            background-color: #ffffff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+    
+            &:hover {
+                background-color: #ffffff;
+            }
+        }
+    }
+
+    .image img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+}  
